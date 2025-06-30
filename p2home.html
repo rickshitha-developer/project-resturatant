@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Home Page</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yesteryear|Niconne|Eagle Lake|Akaya Kanadaka">
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    body{
+      
+      background: linear-gradient(0deg, rgba(235,236,236,1) 0%, rgba(185,186,50,1) 21%, rgba(156,99,29,1) 100%); /* Background color for the page */
+      color: white;
+      font-family: Akaya Kanadaka;
+	  font-size:20px;
+    }
+
+    header {
+      background: linear-gradient(0deg, rgba(235,236,236,1) 0%, rgba(244,245,89,1) 48%, rgba(186,103,0,1) 100%);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+	 
+	  text-shadow:2px 3px 7px gold;
+    }
+
+    header h1 {
+      color: black;
+	   font-family:Eagle Lake;
+    }
+
+    nav a {
+      color: black;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+	  
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+   .full-page {
+  height: 70vh;
+  justify-content: end;
+  align-items: center;
+  display: flex;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZC89OAUqTDxihGBcUssse_igLCgEH1T07Gg&s');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 50px;  /* Space on the left */
+}
+
+.text-container {
+  color: white;
+  margin-right: auto;  /* Pushes text to the left */
+  max-width: 40%;  /* Limit the text width */
+}
+
+.text-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  
+}
+
+.text-container p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  
+}
+
+    .rotate-dish {
+      width: 300px;        
+      height: 300px;
+	  margin-right:70px;
+      border-radius: 400%;  
+      border: 5px solid gold;  
+      box-shadow: 0 0 30px rgba(255, 20, 0, 0.8);  
+      animation: rotate 8s linear infinite;  
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    section {
+      padding: 40px;
+      text-align: center;
+	  text-shadow:2px 3px 5px black;
+    }
+
+    .special-offers {
+      background-color: #333;
+      padding: 20px;
+      margin: 20px auto;
+      width: 80%;
+      border-radius: 10px;
+	  	  box-shadow:0 0 20px rgba(255,215,0,0.9);
+    }
+
+    .special-offers h2 {
+      color: gold;
+      margin-bottom: 20px;
+	  text-shadow:2px 3px 5px black;
+    }
+
+    .special-offers p {
+      color: white;
+	  
+    }
+
+    .featured-dishes img {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      margin: 10px;  
+	  box-shadow:2px 3px 15px rgba(255,0,0,0.8);
+	  transition: transform 0.4s ease;
+      }
+	  .featured-dishes:hover img{
+	  transform: scale(1.1);}
+    .testimonials {
+      background-color: #444;
+      padding: 20px;
+      margin: 20px auto;
+      width: 80%;
+      border-radius: 10px;
+	  box-shadow:0 0 20px rgba(255,215,0,0.9);
+    }
+
+    .testimonials h2 {
+      color: gold;
+    }
+
+    .testimonials p {
+      font-style: italic;
+    }
+
+    footer {
+       background: linear-gradient(0deg, rgba(235,236,236,1) 0%, rgba(244,245,89,1) 48%, rgba(186,103,0,1) 100%);;
+      color: black;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HUNGRY SPOON</h1>
+    <nav>
+      <a href="p2about.html">About Us</a>
+      <a href="p2menu.html">Menu</a>
+      <a href="p2booking.html">Book a Table</a>
+      <a href="p2gallery.html">Gallery</a>
+      <a href="p2contact.html">Contact</a>
+	  <a href="p2faq.html">FAQ</a>
+    </nav>
+  </header>
+
+
+ <div class="full-page">
+  <div class="text-container">
+    <h2 style="font-family:Niconne; font-weight:bold; ">Welcome to Our <br>Fine Dining Experience</h2><br>
+    <p>Discover flavors that inspire and an ambiance that soothes. Join us for a memorable culinary journey.</p>
+	<a href="p2animate.html">Check This Out</a>
+  </div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2XWOerkcrhIsKjpxTOfhxxYPZ8xBPO0D1vQ&s" alt="Signature Dish" class="rotate-dish">
+</div>
+  <section>
+    <h2>About Us</h2>
+    <p>Experience fine dining like never before. Our restaurant offers a perfect blend of flavor, ambiance, and service.</p>
+  </section>
+
+  <section class="special-offers">
+    <h2>Special Offers</h2>
+    <p>Enjoy our exclusive offers: Buy one, get one free on selected dishes every Friday!</p>
+  </section>
+
+  <section class="featured-dishes">
+    <h2>Chef's Special</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbTnDvcrCy_selQyzapygW_71nRMPRfmiX1A&s" alt="Dish 1">
+    <img src="https://assets.zeezest.com/images/PROD_3_1662611644161.jpg" alt="Dish 2">
+    <img src="https://assets.zeezest.com/images/PROD_3_1665724213843.jpg" alt="Dish 3">
+    <p>Don't miss out on our chef's handpicked signature dishes!</p>
+  </section>
+
+  <section class="testimonials">
+    <h2>Customer Testimonials</h2>
+    <p>"The food here is absolutely amazing! The ambiance is perfect, and the service is top-notch!" - Sarah M.</p>
+    <p>"Best dining experience I've ever had. Highly recommended!" - James P.</p>
+	 <a href="p2reviews.html" style="color:#fff000">Reviews</a>
+
+  </section>
+  <section>
+    <h2>Online Order</h2>
+    <p>"From our kitchen to your table, in mintues! Order online and enjoy fresh,delicious food"</p>
+	 <a href="p2order.html">Hungry! Click Here</a>
+	
+	 
+  </section>
+
+  
+	
+  <footer>
+    <p>&copy; 2025 HUNGRY SPOON. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

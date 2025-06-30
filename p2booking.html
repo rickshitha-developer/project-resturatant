@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table - Restaurant</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yesteryear|Niconne|Eagle Lake|Akaya Kanadaka">
+    <style>
+        body {
+            font-family: Akaya Kanadaka;
+	  font-size:20px;
+            margin: 0;
+            padding: 0;
+     background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuv61hLzhnhnwgF1JgMWQH7J2e0O3vrJkXpQ&s");
+	 background-repeat:no-repeat;
+	 background-size:cover;
+            color: gold;
+        }
+
+       
+    header {
+      background: linear-gradient(0deg, rgba(235,236,236,1) 0%, rgba(244,245,89,1) 48%, rgba(186,103,0,1) 100%);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+	  
+    }
+
+    header h1 {
+      color: black;
+	  text-shadow:2px 3px 7px gold;
+    }
+
+    nav a {
+      color: black;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+	  
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+			text-shadow:2px 3px 5px gold;
+        }
+
+        marquee {
+            font-size: 20px;
+            color: #FFD700;
+            background-color:#909089;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+			border-color: black;
+	        border-style:solid;
+			border-width:9px 4px 9px 4px;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 20px ;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.9);
+			
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: gold;
+            color: black;
+            cursor: pointer;
+            border: none;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #FFD700;
+        }
+
+        #print-btn {
+            background-color: #FFD700;
+            color: black;
+            padding: 10px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+            color: white;
+            margin-top: 20px;
+        }
+		main{
+		padding:10px;
+		margin:70px;
+		}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Book Your Table Now!</h1>
+		<nav>
+		 <a href="/">Home</a>
+      <a href="p2about.html">About Us</a>
+      <a href="p2menu.html">Menu</a>
+     
+      <a href="p2gallery.html">Gallery</a>
+       <a href="p2contact.html">Contact</a>
+    </nav>
+    </header>
+
+    <marquee behavior="scroll" direction="left">
+        Reserve your table today! | Enjoy fine dining experiences! | Special weekend offers await you!
+    </marquee>
+<main>
+    <div class="form-container">
+        <form action="p2booking.html" method="post" >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Number of Guests:</label>
+            <select id="guests" name="guests" required>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5+">5 or more Guests</option>
+            </select>
+
+            <label for="requests">Special Requests:</label>
+            <textarea id="requests" name="requests" rows="3"></textarea>
+
+          <button type="submit">Book Now</button>
+        </form>
+
+        <button id="print-btn" onclick="window.print();">Print Confirmation</button>
+    </div>
+</main>
+    <footer>
+        <p>Contact Us: 123-456-7890 | Email: hungryspoon@restaurant.com</p>
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yesteryear|Niconne|Eagle Lake|Akaya Kanadaka">
+  <title>Restaurant Menu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+       background: linear-gradient(0deg, rgba(235,236,236,1) 0%, rgba(185,186,50,1) 21%, rgba(156,99,29,1) 100%);
+      color: white;
+     font-family: Akaya Kanadaka;
+	  font-size:20px;
+    }
+      header {
+        background: linear-gradient(0deg, rgba(235,236,236,1) 0%, rgba(244,245,89,1) 48%, rgba(186,103,0,1) 100%);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      color: black;
+	  text-shadow:2px 3px 5px gold;
+    }
+    nav a {
+      color: black;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .menu-section {
+      padding: 30px 20px;
+      text-align: center;
+	 
+    }
+
+    .menu-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: gold;
+      text-decoration: underline;
+	  text-shadow:2px 3px 5px black;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .menu-item {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      border-radius: 10px;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      transition: transform 0.4s ease, box-shadow 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.05);
+	  color:gold;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .menu-item h3 {
+      font-size: 20px;
+      margin-top: 10px;
+      color: gold;
+    }
+
+    .menu-item p {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .menu-item .price {
+      font-weight: bold;
+      margin-top: 5px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Menu</h1>
+	<nav>
+	<a href="/">Home</a>
+      <a href="p2about.html">About Us</a>
+      <a href="p2booking.html">Book a Table</a>
+      <a href="p2gallery.html">Gallery</a>
+       <a href="p2contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="menu-section">
+    <h2>Explore Our Special Dishes</h2>
+
+    <div class="grid">
+      <!-- Non-Vegetarian Dishes -->
+      <div class="menu-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuWkqR087ENNtJpkaDYBJ5iZx7BeaUJXfjzA&s" alt="Chicken Biryani">
+        <h3>Chicken Biryani</h3>
+        <p>Aromatic basmati rice cooked with flavorful spices and tender chicken.</p>
+        <div class="price">₹180</div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL1nKcafdVC_CezVhfb7gH5HWYtLlGctQuAw&s" alt="Mutton Biryani">
+        <h3>Mutton Biryani</h3>
+        <p>Rich and flavorful biryani made with succulent mutton pieces.</p>
+        <div class="price">₹250</div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://www.spiceroots.com/spiceroots/wp-content/uploads/2008/05/butterchicken-1024x682.jpg" alt="Butter Chicken">
+        <h3>Butter Chicken</h3>
+        <p>Classic Indian dish with chicken in a creamy tomato gravy.</p>
+        <div class="price">₹200</div>
+      </div>
+
+      <!-- Vegetarian Dishes -->
+      <div class="menu-item">
+        <img src="https://c.ndtvimg.com/2024-07/rvdidqqo_paneer-tikka_120x90_01_July_24.jpg" alt="Paneer Tikka">
+        <h3>Paneer Tikka</h3>
+        <p>Grilled paneer cubes marinated with spices and yogurt.</p>
+        <div class="price">₹180</div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://static.wixstatic.com/media/91e241_0cf76aa5613b4055be2f922f71edeaa0~mv2.jpg/v1/fill/w_560,h_372,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Ustaadi%20Hyderabadi%20Veg%20Biryani.jpg" alt="Veg Biryani">
+        <h3>Veg Biryani</h3>
+        <p>Flavorful basmati rice cooked with mixed vegetables and spices.</p>
+        <div class="price">₹150</div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0GVzHO8-GYG5dXr7Bm61SZNtUXnT822Fszw&ss" alt="Aloo Paratha">
+        <h3>Aloo Paratha</h3>
+        <p>Stuffed paratha filled with spiced mashed potatoes.</p>
+        <div class="price">₹100</div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="menu-item">
+        <img src="https://i.ytimg.com/vi/wdbhxettDXE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDszUubUIOSYufu2Zc1jKNg-w1wBQ" alt="Gulab Jamun">
+        <h3>Gulab Jamun</h3>
+        <p>Soft and sweet milk dumplings soaked in sugar syrup.</p>
+        <div class="price">₹80</div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Nt0nJF29vfWipscAQbctChm29qB5w3h_JQ&s" alt="Ice Cream">
+        <h3>Ice Cream</h3>
+        <p>Creamy and delicious ice cream with various flavors.</p>
+        <div class="price">₹70</div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIHIBU6GyAk3k7iRdzt37XEmVoYMTU71FJVA&s" alt="Rasmalai">
+        <h3>Rasmalai</h3>
+        <p>Soft paneer balls soaked in flavored milk and garnished with nuts.</p>
+        <div class="price">₹100</div>
+      </div>
+
+      <!-- Juices -->
+      <div class="menu-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqAZQFV-Go1myFzpap8foIIFSN8c2Y4jHuag&s" alt="Mango Juice">
+        <h3>Mango Juice</h3>
+        <p>Refreshing mango juice made with fresh mangoes.</p>
+        <div class="price">₹50</div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://static.toiimg.com/thumb/msid-113970406,width-1280,height-720,imgsize-53206,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="Orange Juice">
+        <h3>Orange Juice</h3>
+        <p>Freshly squeezed orange juice packed with vitamin C.</p>
+        <div class="price">₹40</div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/watermelon_cooler_57906_16x9.jpg" alt="Watermelon Juice">
+        <h3>Watermelon Juice</h3>
+        <p>Refreshing and hydrating juice made from sweet watermelon.</p>
+        <div class="price">₹40</div>
+      </div>
+	  <div class="menu-item">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHu-vEn4T3y8SSfgMjXyP64CZl8DXjSt5yhw&s" alt="Dosa">
+    <h3>Dosa</h3>
+    <p>Thin, crispy rice crepe served with chutney and sambar.</p>
+    <div class="price">₹80</div>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkhxDPt0AsGJPQrJqo_fQ7k9W2Lzdtt4zUYA&s" alt="Idly">
+    <h3>Idly</h3>
+    <p>Soft steamed rice cakes, served with coconut chutney and sambar.</p>
+    <div class="price">₹60</div>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSQKi_uoNwontCWptMICTVXeyQ2Yf8us6MAA&s" alt="Vada">
+    <h3>Vada</h3>
+    <p>Crispy lentil fritters, served with coconut chutney.</p>
+    <div class="price">₹70</div>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://lh3.googleusercontent.com/BQ7FlBTYJkOogTp--YEsJfBWNwImJNsVoNgLwa354lxvHuRRKmIo9dWiDeuhsEGQlA4BBWcwua264g2B8RDKJ7zcyHZIO95OeP0IbYM=w256-rw" alt="Mini Melas">
+    <h3>Mini Meals</h3>
+    <p>Soft and delicious semolina dish with mild spices.</p>
+    <div class="price">₹90</div>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/01/pongal-ven-pongal.jpg" alt="Pongal">
+    <h3>Pongal</h3>
+    <p>Comforting rice and lentil dish tempered with spices.</p>
+    <div class="price">₹90</div>
+  </div>
+<div class="menu-item">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDnfXctPtzA8bkN_L-6ahzvxwntvzl3x49Ww&s" alt="Sambar Sadham">
+    <h3>Sambar Sadham</h3>
+    <p>Comforting rice and lentil dish tempered with spices.</p>
+    <div class="price">₹90</div>
+  </div>
+    </div>
+  </section>
+
+</body>
+</html>

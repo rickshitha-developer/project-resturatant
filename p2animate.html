@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yesteryear|Niconne|Eagle Lake|Akaya Kanadaka">
+    <title>Special Chicken Biryani</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #3e2723, #0d0d0d);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+			font-family: Akaya Kanadaka;
+	  font-size:20px;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .biryani-image {
+            width: 400px;
+            height: 300px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px 10px #ffcc00;
+            animation: glow 2s infinite alternate, bounce 3s infinite ease-in-out;
+        }
+
+        .vapors {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-20%);
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .vapor {
+            width: 20px;
+            height: 70px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            position: absolute;
+            animation: rise 2s infinite ease-in-out;
+        }
+
+        /* Random positions for vapors on left, center, and right */
+        .vapor:nth-child(1) {
+            left: 10px;
+            animation-delay: 0.3s;
+            transform: scale(1.1);
+        }
+
+        .vapor:nth-child(2) {
+            left: 10px;
+            animation-delay: 0.8s;
+        }
+
+        .vapor:nth-child(3) {
+            left: 180px;
+            animation-delay: 0.5s;
+            transform: scale(1.3);
+        }
+
+        .vapor:nth-child(4) {
+            left: 250px;
+            animation-delay: 1s;
+        }
+
+        
+        @keyframes rise {
+            0% {
+                bottom: 0;
+                opacity: 1;
+                transform: scale(1);
+            }
+            100% {
+                bottom: 150px;
+                opacity: 0;
+                transform: scale(1.5);
+            }
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 10px 5px #ffcc00;
+            }
+            to {
+                box-shadow: 0 0 30px 15px #ffaa00;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2rem;
+            color: #ffcc00;
+            text-shadow: 0 0 10px #ff6600;
+            animation: glow 2s infinite alternate;
+        }
+
+        marquee {
+            font-size: 1.5rem;
+            color: #ffcc00;
+            margin-top: 20px;
+            text-shadow: 0 0 10px #ff6600;
+            animation: glow 2s infinite alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://www.licious.in/blog/wp-content/uploads/2023/01/Shutterstock_2047827035-1024x683.jpg" 
+             alt="Chicken Biryani" class="biryani-image">
+
+        <div class="vapors">
+            <div class="vapor"></div>
+            <div class="vapor"></div>
+            <div class="vapor"></div>
+            <div class="vapor"></div>
+            
+        </div>
+
+        <h1>Feel the Aroma of Our Special Chicken Biryani!</h1>
+        <marquee>Authentic Taste | Rich Flavor | Perfectly Spiced | Experience the Magic!</marquee>
+		<a href="/">Back</a>
+    </div>
+</body>
+
+</html>
